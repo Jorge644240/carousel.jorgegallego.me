@@ -9,3 +9,7 @@ document.querySelector("i.bi-chevron-right").addEventListener("click", () => {
     backgroundImage==6 ? backgroundImage=1 : backgroundImage++;
     document.querySelector(".carousel").style.backgroundImage = `url(./images/background-${backgroundImage}.jpg`;
 });
+
+setInterval(() => {
+    document.querySelector("i.bi-chevron-right").click();
+}, 10000);
