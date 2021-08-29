@@ -1,0 +1,44 @@
+body
+{
+    margin: 0;
+}
+.carousel
+{
+    height: 100vh;
+    background-position: center;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.carousel i
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    padding: 0.8rem;
+    transition: all 0.15s linear;
+    cursor: pointer;
+}
+.carousel i:hover
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FFFFFF;
+}
+i.bi-chevron-left
+{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+i.bi-chevron-right
+{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    right: 0;
+}
+@media screen and (max-width: 500px)
+{
+    .carousel i
+    {
+        font-size: 1.5rem;
+    }
+}
